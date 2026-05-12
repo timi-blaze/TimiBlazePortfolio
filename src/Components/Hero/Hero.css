@@ -1,0 +1,277 @@
+.hero {
+  display: flex;
+  flex-direction: column; 
+  padding: 4rem;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.hero-content{
+    flex: 1;
+    
+    max-width: 600px;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #6c63ff, #00d4ff);
+  background-clip: text;              
+  -webkit-background-clip: text;      
+  -webkit-text-fill-color: transparent;
+}
+.hero-house{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Base button */
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+.btn-secondary{
+    background: linear-gradient(135deg, #6c63ff, #4b47d1);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+}
+.btn-secondary a{
+ text-decoration: none;
+ color: #fff;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: linear-gradient(135deg, #6c63ff, #4b47d1);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(108, 99, 255, 0.4);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #6c63ff, #4b47d1);
+  
+  height:36px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  color: var(--text-muted);
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+/* Profile Circle Fix */
+.profile-circle {
+  width: 410px; /* Width and Height must match for a circle */
+  height: 610px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1a1a1a, #000);
+  border: 4px solid #1a1a1a;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-primary{
+ height: 35px;
+ cursor:pointer;
+
+ border-radius: 14px;
+}
+
+/* Footer Layout */
+.hero-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.icon-circle:hover {
+  background: #fff;
+  color: #000;
+}
+
+.stats-row {
+  display: flex;
+  gap: 4rem;
+}
+
+.stat-box h2 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.stat-box span {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.scroll-hint {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.scroll-hint .arrow {
+  display: block;
+  margin-top: 5px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-5px);}
+  60% {transform: translateY(-3px);}
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .hero-main {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .profile-circle {
+    width: 300px;
+    height: 500px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem !important;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* SECTIONS */
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* SKILLS SECTION */
+  
+
+  /* PROJECTS */
+ 
+
+  /* HERO TEXT */
+  .hero-content,
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem !important;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* BUTTONS */
+  button,
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* PREVENT TEXT BREAKING */
+  h1, h2, h3, p, a {
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+}
