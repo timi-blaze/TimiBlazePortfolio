@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
-  return (
+  return (   
     <footer className="footer">
       <h3 className="footer-name">Timi Blaze</h3>
 
@@ -14,7 +14,8 @@ const Footer: React.FC = () => {
         © {new Date().getFullYear()} Timi Blaze. All rights reserved.
       </p>
     </footer>
+  
   );
-};
+}
 
 export default Footer
