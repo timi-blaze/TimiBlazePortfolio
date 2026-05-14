@@ -210,7 +210,20 @@
     height: 500px;
     margin-bottom: 2rem;
   }
+
+
+  .hero-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile-circle{
+    margin: 0 auto;
+  }
 }
+
 
 @media screen and (max-width: 480px) {
  h1 {
@@ -241,10 +254,7 @@
     padding-right: 1rem !important;
   }
 
-  /* SKILLS SECTION */
-  
 
-  /* PROJECTS */
  
 
   /* HERO TEXT */
@@ -261,6 +271,14 @@
     font-size: 1rem;
   }
 
+  
+  .profile-circle{
+    width: 260px;
+    height: 360px;
+  }
+
+
+
   /* BUTTONS */
   button,
   .btn {
@@ -273,5 +291,22 @@
     word-break: normal;
     overflow-wrap: break-word;
   }
+ .hero-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
 
 }
+
