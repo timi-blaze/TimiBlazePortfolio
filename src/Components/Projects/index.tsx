@@ -26,7 +26,7 @@ const projects: Project[] = [
     image: Resturant,
     tech: ["React.js", "Typescript","Css"],
     github: "#",
-    live:"#"
+    live:"https://tantalizer.vercel.app/"
 },
 {
     id: "todo-app",

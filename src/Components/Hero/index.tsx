@@ -1,7 +1,8 @@
 import React from 'react';
 import './Hero.css';
-import profileImg from '../../assets/timi.png'
+import profileImg from '../../assets/timi.png';
 import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+
 
 
 const Hero: React.FC = () => {
@@ -26,9 +27,14 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="hero-btns">
-          <button className="btn-primary">
-            <span className="icon">⬇️</span> Download Resume
-          </button>
+         <a
+           href="src/assets/Resume.pdf"
+            download
+           className="btn-primary"
+              >
+           <span className="icon">⬇️</span>
+             Download Resume
+              </a>
           <button className="btn-secondary"><a href="#projects">View My Work </a></button>
         </div>
         </div>

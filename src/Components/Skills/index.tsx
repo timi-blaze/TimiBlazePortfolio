@@ -68,6 +68,8 @@ const Skills: React.FC = () => {
           <h3>Testing</h3>
           <div className="tags">
             <span>Jest</span>
+            <span>Vercel</span>
+            <span>Netlify</span>
           </div>
         </div>
 
