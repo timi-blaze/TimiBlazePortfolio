@@ -1,23 +1,20 @@
 .hero {
-  display: flex;
-  flex-direction: column; 
-  padding: 4rem;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 4rem 2.9rem;
 }
 
-.hero-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
 .hero-content{
     flex: 1;
-    
     max-width: 600px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -26,11 +23,13 @@
   -webkit-background-clip: text;      
   -webkit-text-fill-color: transparent;
 }
-.hero-house{
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-
+.hero-house {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .hero-btns {
@@ -114,7 +113,8 @@
 
 /* Profile Circle Fix */
 .profile-circle {
-  width: 410px; /* Width and Height must match for a circle */
+ max-width: 410px; 
+ width: 100%;
   height: 610px;
   border-radius: 50%;
   overflow: hidden;
@@ -122,6 +122,7 @@
   border: 4px solid #1a1a1a;
   box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
+
 
 .profile-circle img {
   width: 100%;

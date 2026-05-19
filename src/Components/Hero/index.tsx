@@ -8,17 +8,15 @@ import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 const Hero: React.FC = () => {
   return (
     <section id="Hero" className="hero">
+      <div className= "hero-container">
         <div className="hero-house">
       <div className="hero-content">
 
-          
-       
-        
         <h1>Hello, I'm <br /><span className="highlight">Timi Blaze</span></h1>
         
         <p className="hero-description">
           Frontend Engineer crafting digital experiences with 
-          <strong> 1+ years</strong> of expertise.
+          <strong> 2+ years</strong> of expertise.
         </p>
         
         <p className="hero-subtext">
@@ -27,14 +25,16 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="hero-btns">
-         <a
-           href="src/assets/Resume.pdf"
-            download
-           className="btn-primary"
-              >
-           <span className="icon">⬇️</span>
+          <a
+            href="/timileyin-resume.pdf"
+             download="Timileyin-Adeoye-Resume.pdf"
+             target="_blank"
+              rel="noopener noreferrer"
+               className="btn-primary"
+             >
+             <span className="icon">⬇️</span>
              Download Resume
-              </a>
+         </a>
           <button className="btn-secondary"><a href="#projects">View My Work </a></button>
         </div>
         </div>
@@ -43,6 +43,8 @@ const Hero: React.FC = () => {
         <div className="profile-circle">
           <img src={profileImg} alt="Profile" />
         </div>
+      </div>
+
       </div>
 
       </div>
